@@ -3,7 +3,7 @@
 * {margin: 0;padding: 0;box-sizing: border-box;font-family: 'Josefin Sans', sans-serif;letter-spacing: 3px;user-select: none;}
 body{background-color: #1F1F1F;}
 
-#timeline {height: fit-content;overflow: hidden;}
+#timeline {width: 100vw;height: 100vh;overflow-y: scroll;}
 
 /* The actual timeline (the vertical ruler) */
 .timeline {position: relative;margin: 0 auto;background-color: #1F1F1F;}
