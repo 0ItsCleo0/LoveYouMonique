@@ -49,3 +49,17 @@ function pageTrans(direction) {
             .fromTo(date, {zIndex: 2}, {zIndex: -10, duration: 1})
     }
 }
+
+const observerDates = document.querySelectorAll('.timeline-date')
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle("show", entry.isIntersecting)
+    })
+    console.log(entries);
+}, {
+    threshold: 1,
+})
+
+observerDates.forEach(date => {
+    observer.observe(date)
+})
